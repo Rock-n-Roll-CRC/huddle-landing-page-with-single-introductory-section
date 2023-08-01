@@ -1,0 +1,28 @@
+/* || GENERAL  */
+
+/* Custom Properties */
+:root {
+  /* Primary Colors */
+  --primary-color-violet: #674baf;
+  --primary-color-soft-magenta: #e882e8;
+}
+
+/* Body Styles */
+body {
+  background: top / contain no-repeat url("../images/bg-mobile.svg"),
+    var(--primary-color-violet);
+  font: 400 1rem "Open Sans", sans-serif;
+}
+
+/* Styles For Visually Hidden Elements  */
+.visually-hidden:not(:focus, :active) {
+  clip: rect(1px 1px 1px 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* || SINGLE PRICE GRID COMPONENT (MOBILE) */
