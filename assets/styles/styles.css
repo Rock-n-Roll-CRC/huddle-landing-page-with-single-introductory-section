@@ -5,6 +5,10 @@
   /* Primary Colors */
   --primary-color-violet: #674baf;
   --primary-color-soft-magenta: #e882e8;
+
+  /* Pure Colors */
+  --pure-color-black: #000;
+  --pure-color-white: #fff;
 }
 
 /* Body Styles */
@@ -12,6 +16,7 @@ body {
   background: top / contain no-repeat url("../images/bg-mobile.svg"),
     var(--primary-color-violet);
   font: 400 1rem "Open Sans", sans-serif;
+  padding: 2rem 2.1rem;
 }
 
 /* Styles For Visually Hidden Elements  */
@@ -26,3 +31,38 @@ body {
 }
 
 /* || SINGLE PRICE GRID COMPONENT (MOBILE) */
+
+/* | HEADER | */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 3.75rem;
+}
+
+/* Logo */
+header > .logo {
+  max-width: 8.1rem;
+  max-height: 2rem;
+}
+
+/* Heading */
+header > .heading {
+  color: var(--pure-color-white);
+  font: 600 1rem Poppins, sans-serif;
+  text-align: center;
+}
+
+/* | MAIN | */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Image */
+main > img {
+  width: 100%;
+  max-width: 18.8rem;
+}
