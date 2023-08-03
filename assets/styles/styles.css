@@ -9,6 +9,9 @@
   /* Pure Colors */
   --pure-color-black: #000;
   --pure-color-white: #fff;
+
+  /* Shadow Colors */
+  --shadow-color-black: #00000030;
 }
 
 /* Body Styles */
@@ -59,10 +62,105 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 4rem;
 }
 
 /* Image */
 main > img {
   width: 100%;
   max-width: 18.8rem;
+  margin-bottom: 3.8rem;
+}
+
+/* | Registration Section | */
+main > .registration-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--pure-color-white);
+  text-align: center;
+}
+
+/* Heading */
+main > .registration-section > .heading {
+  font: 600 1.5rem Poppins, sans-serif;
+  margin-bottom: 0.9rem;
+}
+
+/* Description */
+main > .registration-section > .description {
+  max-width: 19.22rem;
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Registration Button */
+main > .registration-section > .registration-button {
+  width: 100%;
+  max-width: 12.5rem;
+  color: var(--primary-color-violet);
+  font: 400 0.8rem "Open Sans", sans-serif;
+  border: 0;
+  border-radius: 100px;
+  padding: 0.7rem 0;
+  cursor: pointer;
+  box-shadow: 0 5px 5px var(--shadow-color-black);
+  transition: color 0.15s, background-color 0.15s, opacity 0.15s;
+}
+
+main > .registration-section > .registration-button:hover {
+  color: var(--pure-color-white);
+  background-color: var(--primary-color-soft-magenta);
+}
+
+main > .registration-section > .registration-button:active {
+  opacity: 0.8;
+}
+
+/* | FOOTER | */
+
+/* | Social Links | */
+footer > .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+/* Social Link */
+footer > .social-links > .social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.75rem;
+  width: 1.75rem;
+  background-color: var(--primary-color-violet);
+  border: 1px solid var(--pure-color-white);
+  border-radius: 50%;
+  transition: border-color 0.15s, opacity 0.15s;
+}
+
+footer > .social-links > .social-link:hover {
+  border-color: var(--primary-color-soft-magenta);
+}
+
+footer > .social-links > .social-link:active {
+  opacity: 0.5;
+}
+
+/* Social Link (SVG) */
+footer > .social-links > .social-link > svg {
+  height: 0.9rem;
+  width: 0.9rem;
+  fill: var(--pure-color-white);
+  transition: fill 0.15s;
+}
+
+footer > .social-links > .social-link:hover > svg {
+  fill: var(--primary-color-soft-magenta);
+}
+
+/* Twitter Link (SVG) */
+footer > .social-links > .social-link.twitter-link > svg {
+  height: 0.8rem;
+  width: 0.8rem;
 }
