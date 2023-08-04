@@ -164,3 +164,103 @@ footer > .social-links > .social-link.twitter-link > svg {
   height: 0.8rem;
   width: 0.8rem;
 }
+
+/* || SINGLE PRICE GRID COMPONENT (DESKTOP) */
+@media all and (width >= 64rem) {
+  /* Body Styles */
+  body {
+    background-image: url("../images/bg-desktop.svg");
+    padding: 3.3rem 2.1rem;
+  }
+
+  /* | HEADER | */
+  header {
+    margin-bottom: 5.45rem;
+  }
+
+  /* Logo */
+  header > .logo {
+    max-width: 18rem;
+    max-height: 3.35rem;
+  }
+
+  /* Heading */
+  header > .heading {
+    font-size: 2rem;
+  }
+
+  /* | MAIN | */
+  main {
+    flex-direction: row;
+    align-items: center;
+    gap: 3.3rem;
+    margin-bottom: 1.3rem;
+    margin-left: 2.45rem;
+    margin-right: 2.45rem;
+  }
+
+  /* Image */
+  main > img {
+    width: 55%;
+    max-width: 44.3rem;
+    margin-bottom: 0;
+  }
+
+  /* | Registration Section | */
+  main > .registration-section {
+    max-width: 33rem;
+    align-items: flex-start;
+    align-self: flex-start;
+    text-align: start;
+    margin-top: 2.65rem;
+  }
+
+  /* Heading */
+  main > .registration-section > .heading {
+    font: 600 2.5rem Poppins, sans-serif;
+    margin-bottom: 1.25rem;
+  }
+
+  /* Description */
+  main > .registration-section > .description {
+    max-width: 32.5rem;
+    font: 400 1.13rem "Open Sans", sans-serif;
+    line-height: 1.7rem;
+    margin-bottom: 1.45rem;
+  }
+
+  /* Registration Button */
+  main > .registration-section > .registration-button {
+    font: 400 1.2rem "Open Sans", sans-serif;
+    padding: 0.9rem 0;
+    margin-left: 0.05rem;
+  }
+
+  /* | FOOTER | */
+
+  /* | Social Links | */
+  footer > .social-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-right: 2.9rem;
+  }
+
+  /* Social Link */
+  footer > .social-links > .social-link {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  /* Social Link (SVG) */
+  footer > .social-links > .social-link > svg {
+    height: 1.2rem;
+    width: 1.2rem;
+  }
+
+  /* Twitter Link (SVG) */
+  footer > .social-links > .social-link.twitter-link > svg {
+    height: 1.1rem;
+    width: 1.1rem;
+  }
+}
